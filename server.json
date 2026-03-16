@@ -1,28 +1,29 @@
 {
-  "mcpName": "io.github.markswendsen-code/lyft",
-  "name": "@striderlabs/mcp-lyft",
+  "name": "io.github.markswendsen-code/lyft",
   "version": "0.1.0",
-  "description": "MCP server connector for Lyft ride-sharing — request rides, get fare estimates, track trips via browser automation",
-  "transport": "stdio",
-  "command": "npx",
-  "args": ["@striderlabs/mcp-lyft"],
-  "tools": [
-    "status",
-    "login",
-    "logout",
-    "set_pickup",
-    "set_destination",
-    "get_fare_estimate",
-    "get_ride_options",
-    "request_ride",
-    "get_ride_status",
-    "cancel_ride",
-    "get_ride_history"
-  ],
-  "repository": "https://github.com/markswendsen-code/mcp-lyft",
+  "description": "MCP server connector for Lyft ride-sharing \u2014 request rides, get fare estimates, track trips via...",
+  "repository": {
+    "url": "https://github.com/markswendsen-code/mcp-lyft",
+    "source": "github"
+  },
   "npm": "https://www.npmjs.com/package/@striderlabs/mcp-lyft",
   "author": "Strider Labs <hello@striderlabs.ai>",
-  "homepage": "https://striderlabs.ai",
-  "license": "MIT",
-  "keywords": ["mcp", "lyft", "rideshare", "transportation", "ai-agent"]
+  "keywords": [
+    "mcp",
+    "lyft",
+    "rideshare",
+    "transportation",
+    "ai-agent"
+  ],
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@striderlabs/mcp-lyft",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
 }
